@@ -1,0 +1,49 @@
+{
+  "name": "oneline-ui",
+  "version": "1.0.0",
+  "description": "oneline ui 是基于vue的界面组件",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --config config/build/build.dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onelineteam/oneline-ui.git"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "ui"
+  ],
+  "author": "oneline",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onelineteam/oneline-ui/issues"
+  },
+  "homepage": "https://github.com/onelineteam/oneline-ui#readme",
+  "dependencies": {
+    "vue": "^2.6.8",
+    "vue-router": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "less-loader": "^4.1.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3333",
+    "url-loader": "^1.1.2",
+    "vue-loader": "^15.7.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.8",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
