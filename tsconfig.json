@@ -15,7 +15,11 @@
     "es2018",
     "dom",
     "dom.iterable"
-  ]
+  ],
+  "baseUrl": "./",
+  "paths": {
+    "@core": ["src/lib/core"]
+  }
 },
 "files": [
   "types/vue-shims.d.ts"
