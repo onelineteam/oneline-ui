@@ -40,7 +40,7 @@ types: 定义类型的目录
 
 李建国:  button, input
 
-罗潇: layout
+罗潇: layout, checkbox
 
 泡泡: icon, pop
 
