@@ -1,0 +1,66 @@
+
+// 文字标题: #383D47, 正文色: #4A505E , 提示色: #9AB0C6, 重点提示: #FFBD3C
+// 警告色: 错误警示: #FF617F, 背景色: #F5F5F9, 弹出层蒙版: #383D47 40%
+
+$color-text: (
+  title: #383D47,
+  content: #4A505E,
+  tip: #9AB0C6,
+  error: #FF617F,
+  warning: #FFBD3C
+);
+
+$color-bg: (
+  main: #F5F5F9,
+  overlay: #383D47 40%
+);
+
+
+
+/**
+* primary - blue
+* warning - yellow
+* error - red
+* success - green
+**/
+
+//蓝色
+$color-blue: (
+  light: #71CDFF,
+  dark: #3A9FF6,
+  medium: #5AB2FF
+);
+//红色
+$color-red: (
+  light: #FF617F,
+  dark: #F4333C,
+  medium: #FF4772
+);
+//黄色
+$color-yellow: (
+  light: #FFBD3C,
+  dark: #FF9900,
+  medium: #FFA82D
+);
+//绿色
+$color-green: (
+  light: #27E2B2,
+  dark: #19BE6B,
+  medium: #0DDECE
+);
+
+//灰色
+$color-grey: (
+  light: #F8F9FD,
+  dark: #DEE2E7,
+  medium: #E9EDF2
+);
+
+$color: (
+  text: $color-text, 
+  bg: $color-bg, 
+  red: $color-red, 
+  green: $color-green,
+  yellow: $color-yellow,
+  blue: $color-blue
+);

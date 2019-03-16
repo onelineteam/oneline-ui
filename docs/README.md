@@ -30,3 +30,19 @@ src: 源码
   --public: 公共资源目录, 主要是静态文件相关
 
 types: 定义类型的目录
+
+
+## 开发计划
+
+版本: 1.0 , 时间: 
+
+陈炳廷: radio, select
+
+李建国:  button, input
+
+罗潇: layout
+
+泡泡: icon, pop
+
+
+

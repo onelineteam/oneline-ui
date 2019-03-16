@@ -10,17 +10,19 @@ module.exports = [
   {
     test: /\.css$/,
     exclude: /node_modules/, 
-    use: [{loader: 'css-loader'}]
+    use: [{loader: 'style-loader'},, {loader: 'css-loader'}]
   },
+
   {
     test: /\.scss$/,
     exclude: /node_modules/, 
-    use: [{loader: 'sass-loader'}]
+    use: [{loader: 'style-loader'}, {loader: 'css-loader'},{loader: 'sass-loader'}]
   },
+
   {
-    test: /\.lcss$/,
+    test: /\.less$/,
     exclude: /node_modules/, 
-    use: [{loader: 'less-loader'}]
+    use: [{loader: 'style-loader'}, {loader: 'css-loader'}, {loader: 'less-loader'}]
   },
   {
     test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,

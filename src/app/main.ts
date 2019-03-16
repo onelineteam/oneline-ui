@@ -1,9 +1,10 @@
-import Vue from 'vue';
+import {Vue, CreateElement} from '@core';
 import App from './App.vue';
 
+import "../style/index.scss";
 
 new Vue({
-  render(h) {
-    return h(App)
+  render(h: CreateElement) {
+    return h(App);
   }
 }).$mount('#app')

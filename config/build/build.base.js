@@ -4,6 +4,8 @@ const path = require('path');
 function resolve(source) {
   return path.resolve(__dirname, "../../" + source)
 }
+
+console.log(...loader)
 module.exports = {
   entry: resolve("src/app/main.ts"),
   output: { 
@@ -29,7 +31,7 @@ module.exports = {
         options: {
           loaders: {
             css: [{loader: "css-loader"}, {loader: "vue-style-loader"}],
-            scss: [{loader: "scss-loader"}, {loader: "vue-style-loader"}],
+            scss: [{loader: "sass-loader"}, {loader: "vue-style-loader"}],
             less: [{loader: 'less-loader'}, {loader: "vue-style-loader"}]
           }
         }

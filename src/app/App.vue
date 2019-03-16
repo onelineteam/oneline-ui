@@ -1,5 +1,5 @@
 <template>
-  <div>hello, world! test
+  <div>hello, world! test21
 
     <hello :outtitle="title"/>
   </div>

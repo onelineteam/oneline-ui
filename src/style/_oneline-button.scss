@@ -1,0 +1,3 @@
+#{$prefix}button {
+  color: map-get(map-get($color, text), title)
+}
