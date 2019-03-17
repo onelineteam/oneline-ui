@@ -1,3 +1,7 @@
 node_modules
 dist
 package-lock.json
+src/app
+src/public
+config/*
+lib/*
