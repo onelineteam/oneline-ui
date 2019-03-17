@@ -1,15 +1,16 @@
 <template>
-  <div>hello, world! test21
-
-    <hello :outtitle="title"/>
+  <div>
+    <icon type="piaofang"></icon>
+    <icon type="arrows-alt" pre="fa" family="fa"></icon>
   </div>
 </template>
 
 <script>
 // import Hello from './hello';
+import {Icon} from '@/packages/icon';
  
 export default {
-  components: {Hello: ()=> import('./hello')},
+  components: {Icon},
   
   data() {
     return {
