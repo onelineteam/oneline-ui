@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'bugs',
+1 verbose cli   'oneline-ui' ]
+2 info using npm@3.8.9
+3 info using node@v6.2.0
+4 silly fetchPackageMetaData oneline-ui
+5 silly fetchNamedPackageData oneline-ui
+6 silly mapToRegistry name oneline-ui
+7 silly mapToRegistry using default registry
+8 silly mapToRegistry registry https://registry.npm.taobao.org/
+9 silly mapToRegistry data Result {
+9 silly mapToRegistry   raw: 'oneline-ui',
+9 silly mapToRegistry   scope: null,
+9 silly mapToRegistry   name: 'oneline-ui',
+9 silly mapToRegistry   rawSpec: '',
+9 silly mapToRegistry   spec: 'latest',
+9 silly mapToRegistry   type: 'tag' }
+10 silly mapToRegistry uri https://registry.npm.taobao.org/oneline-ui
+11 verbose request uri https://registry.npm.taobao.org/oneline-ui
+12 verbose request no auth needed
+13 info attempt registry request try #1 at 20:04:45
+14 verbose request id 8c0f9c269e0ae6ca
+15 http request GET https://registry.npm.taobao.org/oneline-ui
+16 http 404 https://registry.npm.taobao.org/oneline-ui
+17 verbose headers { date: 'Wed, 27 Mar 2019 12:04:44 GMT',
+17 verbose headers   'content-type': 'application/json',
+17 verbose headers   'content-length': '21',
+17 verbose headers   connection: 'keep-alive',
+17 verbose headers   'set-cookie': [ '__cfduid=d022349966f5fd4923828dbde20fa58471553688284; expires=Thu, 26-Mar-20 12:04:44 GMT; path=/; domain=.registry.npmjs.com; HttpOnly' ],
+17 verbose headers   'cf-cache-status': 'MISS',
+17 verbose headers   'cache-control': 'max-age=300',
+17 verbose headers   'cf-ray': '4be13a7ef9c85396-LAX',
+17 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+17 verbose headers   vary: 'accept-encoding, accept',
+17 verbose headers   server: 'cloudflare' }
+18 silly get cb [ 404,
+18 silly get   { date: 'Wed, 27 Mar 2019 12:04:44 GMT',
+18 silly get     'content-type': 'application/json',
+18 silly get     'content-length': '21',
+18 silly get     connection: 'keep-alive',
+18 silly get     'set-cookie': [ '__cfduid=d022349966f5fd4923828dbde20fa58471553688284; expires=Thu, 26-Mar-20 12:04:44 GMT; path=/; domain=.registry.npmjs.com; HttpOnly' ],
+18 silly get     'cf-cache-status': 'MISS',
+18 silly get     'cache-control': 'max-age=300',
+18 silly get     'cf-ray': '4be13a7ef9c85396-LAX',
+18 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+18 silly get     vary: 'accept-encoding, accept',
+18 silly get     server: 'cloudflare' } ]
+19 silly fetchPackageMetaData Error: Not found : oneline-ui
+19 silly fetchPackageMetaData     at makeError (C:\nvm\v6.2.0\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+19 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\nvm\v6.2.0\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+19 silly fetchPackageMetaData     at Request._callback (C:\nvm\v6.2.0\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+19 silly fetchPackageMetaData     at Request.self.callback (C:\nvm\v6.2.0\node_modules\npm\node_modules\request\request.js:200:22)
+19 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+19 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+19 silly fetchPackageMetaData     at Request.<anonymous> (C:\nvm\v6.2.0\node_modules\npm\node_modules\request\request.js:1067:10)
+19 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+19 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+19 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\nvm\v6.2.0\node_modules\npm\node_modules\request\request.js:988:12)
+19 silly fetchPackageMetaData  error for oneline-ui { Error: Not found : oneline-ui
+19 silly fetchPackageMetaData     at makeError (C:\nvm\v6.2.0\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+19 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\nvm\v6.2.0\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+19 silly fetchPackageMetaData     at Request._callback (C:\nvm\v6.2.0\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+19 silly fetchPackageMetaData     at Request.self.callback (C:\nvm\v6.2.0\node_modules\npm\node_modules\request\request.js:200:22)
+19 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+19 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+19 silly fetchPackageMetaData     at Request.<anonymous> (C:\nvm\v6.2.0\node_modules\npm\node_modules\request\request.js:1067:10)
+19 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+19 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+19 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\nvm\v6.2.0\node_modules\npm\node_modules\request\request.js:988:12) pkgid: 'oneline-ui', statusCode: 404, code: 'E404' }
+20 verbose stack Error: Not found : oneline-ui
+20 verbose stack     at makeError (C:\nvm\v6.2.0\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+20 verbose stack     at CachingRegistryClient.<anonymous> (C:\nvm\v6.2.0\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+20 verbose stack     at Request._callback (C:\nvm\v6.2.0\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+20 verbose stack     at Request.self.callback (C:\nvm\v6.2.0\node_modules\npm\node_modules\request\request.js:200:22)
+20 verbose stack     at emitTwo (events.js:106:13)
+20 verbose stack     at Request.emit (events.js:191:7)
+20 verbose stack     at Request.<anonymous> (C:\nvm\v6.2.0\node_modules\npm\node_modules\request\request.js:1067:10)
+20 verbose stack     at emitOne (events.js:101:20)
+20 verbose stack     at Request.emit (events.js:188:7)
+20 verbose stack     at IncomingMessage.<anonymous> (C:\nvm\v6.2.0\node_modules\npm\node_modules\request\request.js:988:12)
+21 verbose statusCode 404
+22 verbose pkgid oneline-ui
+23 verbose cwd F:\oneline-ui
+24 error Windows_NT 6.1.7601
+25 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "bugs" "oneline-ui"
+26 error node v6.2.0
+27 error npm  v3.8.9
+28 error code E404
+29 error 404 Not found : oneline-ui
+30 error 404
+31 error 404 'oneline-ui' is not in the npm registry.
+32 error 404 You should bug the author to publish it (or use the name yourself!)
+33 error 404 Note that you can also install from a
+34 error 404 tarball, folder, http url, or git url.
+35 verbose exit [ 1, true ]
