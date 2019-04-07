@@ -2,7 +2,11 @@
   <div>
     <!-- <icon type="piaofang"></icon>
     <icon type="arrows-alt" pre="fa" family="fa"></icon> -->
-    <one-line-button type="success" round plain size="mini" disabled @click="clicka">默认按钮</one-line-button>
+    <one-line-button-group>
+      <one-line-button type="primary" icon="piaofang"  @click="clicka">这是文字按钮</one-line-button>
+      <one-line-button type="primary" icon="piaofang"  @click="clicka">这是文字按钮</one-line-button>
+    </one-line-button-group>
+    
   </div>
 </template>
 
@@ -10,9 +14,10 @@
 // import Hello from './hello';
 import {Icon} from '@/packages/icon';
 import {OneLineButton} from '@/packages/button';
+import {OneLineButtonGroup} from '@/packages/button-group';
  
 export default {
-  components: {Icon,OneLineButton},
+  components: {Icon,OneLineButton,OneLineButtonGroup},
   
   data() {
     return {
