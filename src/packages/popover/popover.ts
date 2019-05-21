@@ -1,18 +1,16 @@
 import { Component, OnelineComponent, CreateElement, Prop, VNode, Vue, Watch } from "@core";
 import { WayPopover, WayPopoverPlacementType, on, WayDomUtil } from "@utils";
 
-function findChild(node: Node, target: Node): boolean {
+function findChild(node: Node, target: Node, istrue: boolean = false): boolean {
   const childs = node.childNodes || [];
-  const len = childs.length;
-   
-  let istrue = false;
+  const len = childs.length; 
   for (let i = 0; i < len; i++) {
-    const child = childs.item(i);
+    const child = childs.item(i); 
     if (child === target) { 
-       istrue =  true; 
-       break;
+      istrue =  true; 
+      break; 
     } else {
-      istrue = findChild(child, target);
+      istrue = findChild(child, target, istrue);
     } 
   }
    
@@ -59,11 +57,11 @@ export default class Popover extends OnelineComponent {
 
 
       on(window, 'click', (e) => {
-         
-        if (this.popover && this.trigger !== "hands") {
-          let parent: Node = this.popover.target.popover.popover;
+          
+        if (this.popover && this.popover.isShow() && this.trigger !== "hands") {
+          let parent: Node = this.popover.target.popover.popover; 
           const ischild = findChild(parent,e.srcElement as Element);
-           
+           console.log(ischild, "======>")
           if (!ischild && e.target !== this.reference) {
             this.popover.hide();
           } else { 
