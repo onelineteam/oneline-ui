@@ -1,16 +1,16 @@
 <template>
   <div>
     <icon type="piaofang"></icon>
-    <icon type="arrows-alt" pre="fa" family="fa"></icon>
+    <one-line-input v-model="title"></one-line-input>
   </div>
 </template>
 
 <script>
 // import Hello from './hello';
 import {Icon} from '@/packages/icon';
- 
+import {OneLineInput} from '@/packages/input';
 export default {
-  components: {Icon},
+  components: {Icon,OneLineInput},
   
   data() {
     return {
