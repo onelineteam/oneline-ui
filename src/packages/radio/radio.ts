@@ -13,18 +13,6 @@ export class Radio extends OnelineComponent {
     // @Prop() model?
     render(create: CreateElement) {
 
-        return create('label', {
-            'class': {
-                radio: true
-            }
-        }, [create('span', {}, [create('span', {
-            'class': {
-                radio__inner: true
-            }
-        }), create('input', { domProps: { type: 'radio', value:} })]), create('span', {
-            'class': {
-                radio__label: true
-            }
-        }, [])])
+        
     }
 }

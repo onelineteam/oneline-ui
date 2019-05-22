@@ -130,31 +130,31 @@ class WayPopoverTarget {
 
   initFixed() {
  
-    const step = (parent: HTMLElement | Document) => {
-      const callback = () => {
-        clearTimeout(this.timeout); 
-        this.timeout = setTimeout(() => {
-          this.computedFixed();
-          this.popover.setStyle('popover', 'opacity', '1');
+    // const step = (parent: HTMLElement | Document) => {
+    //   const callback = () => {
+    //     clearTimeout(this.timeout); 
+    //     this.timeout = setTimeout(() => {
+    //       this.computedFixed();
+    //       this.popover.setStyle('popover', 'opacity', '1');
 
-        }, 10);
-      }
+    //     }, 10);
+    //   }
 
-      return callback;
+    //   return callback;
 
-    }
+    // }
 
-    step(WayDomUtil.getScrollParent(this.target) as HTMLElement)();
+    // step(WayDomUtil.getScrollParent(this.target) as HTMLElement)();
 
-    const parents = WayDomUtil.getAllScrollParent(this.target, document.documentElement);
-    for (let i = 0; i < parents.length; i++) {
-      let parent: HTMLElement | Document = parents[i];
-      parent = parent === document.documentElement ? document : parent; 
-      const callback = step(parent);
-      const event = new WayPopoverEvent(parent, "scroll", callback);
-      this.scrollEvent.push(event);
+    // const parents = WayDomUtil.getAllScrollParent(this.target, document.documentElement);
+    // for (let i = 0; i < parents.length; i++) {
+    //   let parent: HTMLElement | Document = parents[i];
+    //   parent = parent === document.documentElement ? document : parent; 
+    //   const callback = step(parent);
+    //   const event = new WayPopoverEvent(parent, "scroll", callback);
+    //   this.scrollEvent.push(event);
       
-    }
+    // }
 
   }
 

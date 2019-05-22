@@ -4,8 +4,6 @@ const path = require('path');
 function resolve(source) {
   return path.resolve(__dirname, "../../" + source)
 }
-
-console.log(...loader)
 module.exports = {
   entry: ['babel-polyfill', resolve("src/app/main.ts")],
   output: { 
