@@ -133,7 +133,7 @@ class WayPopoverTarget {
     const step = (parent: HTMLElement | Document) => {
       const callback = () => {
         clearTimeout(this.timeout); 
-        this.timeout = setTimeout(() => {
+        this.timeout = window.setTimeout(() => {
           this.computedFixed();
           this.popover.setStyle('popover', 'opacity', '1');
 
