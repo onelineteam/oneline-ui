@@ -7,11 +7,15 @@ import { Icon } from '@/packages/icon';
   }
 })
 export class OneLineInput extends OnelineComponent {
+  @Prop({ default: 'oneline-input', type: String }) type?: String; //是否朴素按钮
   @Prop() value?: string;
-  render(create: CreateElement) {
 
+  render(create: CreateElement) {
+    const className: any = [
+      this.type ==='textarea'?'oneline-textarea':'oneline-input'
+    ]
     return create('div', {
-      class: ["oneline-input"],
+      class: className,
     }, [create('input', {
       domProps: {
         value: this.value
