@@ -1,7 +1,7 @@
 <template>
   <div>
     <icon type="piaofang"></icon>
-    <one-line-input v-model="title"></one-line-input>
+    <one-line-input  v-model="text" clearable placeholder="请输入内容"></one-line-input>
   </div>
 </template>
 
@@ -14,7 +14,8 @@ export default {
   
   data() {
     return {
-      title: 'hello'
+      title: 'hello',
+      text:""
     }
   }, 
   mounted() {
