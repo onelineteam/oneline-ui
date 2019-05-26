@@ -115,9 +115,9 @@ input {
     transition: color .2s cubic-bezier(.645, .045, .355, 1)
 }
 
-.oneline-input-group__append .el-button,
+.oneline-input-group__append .oneline-button,
 .oneline-input-group__append .oneline-input,
-.oneline-input-group__prepend .el-button,
+.oneline-input-group__prepend .oneline-button,
 .oneline-input-group__prepend .oneline-input,
 .oneline-input__inner {
     font-size: inherit
@@ -326,20 +326,20 @@ input {
     outline: 0
 }
 
-.oneline-input-group__append .el-button,
-.oneline-input-group__append .el-select,
-.oneline-input-group__prepend .el-button,
-.oneline-input-group__prepend .el-select {
+.oneline-input-group__append .oneline-button,
+.oneline-input-group__append .oneline-select,
+.oneline-input-group__prepend .oneline-button,
+.oneline-input-group__prepend .oneline-select {
     display: inline-block;
     margin: -10px -20px
 }
 
-.oneline-input-group__append button.el-button,
-.oneline-input-group__append div.el-select .oneline-input__inner,
-.oneline-input-group__append div.el-select:hover .oneline-input__inner,
-.oneline-input-group__prepend button.el-button,
-.oneline-input-group__prepend div.el-select .oneline-input__inner,
-.oneline-input-group__prepend div.el-select:hover .oneline-input__inner {
+.oneline-input-group__append button.oneline-button,
+.oneline-input-group__append div.oneline-select .oneline-input__inner,
+.oneline-input-group__append div.oneline-select:hover .oneline-input__inner,
+.oneline-input-group__prepend button.oneline-button,
+.oneline-input-group__prepend div.oneline-select .oneline-input__inner,
+.oneline-input-group__prepend div.oneline-select:hover .oneline-input__inner {
     border-color: transparent;
     background-color: transparent;
     color: inherit;
@@ -355,8 +355,8 @@ input {
     border-left: 0
 }
 
-.oneline-input-group--append .el-select .oneline-input.is-focus .oneline-input__inner,
-.oneline-input-group--prepend .el-select .oneline-input.is-focus .oneline-input__inner {
+.oneline-input-group--append .oneline-select .oneline-input.is-focus .oneline-input__inner,
+.oneline-input-group--prepend .oneline-select .oneline-input.is-focus .oneline-input__inner {
     border-color: transparent
 }
 

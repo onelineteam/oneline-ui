@@ -1,7 +1,15 @@
 <template>
+  <!-- <div style="width:180px;"> -->
   <div>
-    <icon type="piaofang"></icon>
-    <one-line-input  v-model="text" clearable placeholder="请输入内容"></one-line-input>
+    
+    <!-- <one-line-input size="mini" v-model="text" placeholder="请输入内容">
+      <template slot="prepend">Http://</template>
+      <template slot="append">com</template>
+      <icon type="close-circle" class="oneline-input__icon" slot="prefix"></icon>
+    </one-line-input> -->
+    <one-line-input placeholder="请输入内容" disabled type="textarea" v-model="text">
+
+    </one-line-input>
   </div>
 </template>
 
@@ -23,10 +31,14 @@ export default {
     setTimeout(()=>{
       this.title = "this is test"
     },5000)
-  }
+  },
 }
 </script>
 
 <style>
-
+html {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
 </style>
