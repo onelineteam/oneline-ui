@@ -10,6 +10,9 @@ export class OneLineInput extends OnelineComponent {
   @Prop() value?: string;//内容
   @Prop() placeholder?: string;
   @Prop() size?: string;  //尺寸
+  @Prop() minlength?: string;  //最小长度
+  @Prop() maxlength?: string;  //最大长度
+  @Prop() rows?: String; //文本框高度
   @Prop({ default: 'text', type: String }) type?: String; //input类型
   @Prop({ default: 'off', type: String }) autocomplete?: String; //是否自动补齐
   @Prop() prefixIcon?: String; //前置图标
@@ -75,6 +78,9 @@ export class OneLineInput extends OnelineComponent {
       readonly: this.readonly ? true : false,
       placeholder: this.placeholder,
       autoComplete: this.autocomplete,
+      minlength:this.maxlength,
+      maxlength:this.maxlength,
+      rows:this.type==='textarea'?this.rows:null,
       type: this.type,
     }
     let inputNode: any = [];
