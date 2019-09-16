@@ -1,4 +1,9 @@
 <template>
+
+  <div>hello, world! test21
+
+    <hello :outtitle="title"/>
+
   <div style="height: 3000px; position: relative; border: #999 30px solid;">
     <icon type="piaofang"></icon>
     <icon type="arrows-alt" pre="fa" family="fa"></icon>
@@ -9,16 +14,18 @@
 
     <div style="position: absolute;">fsdklfjsdlkfjslkdjflskdjflksjdlfdsfsdfsd</div>
     
+ </div>
   </div>
 </template>
 
 <script>
 // import Hello from './hello';
-import {Icon} from '@/packages/icon';
+ import {Icon} from '@/packages/icon';
 import Popover from './popover.vue';
  
 export default {
-  components: {Icon, Popover},
+  components: {Hello: ()=> import('./hello'),Icon, Popover},
+ 
   
   data() {
     return {
