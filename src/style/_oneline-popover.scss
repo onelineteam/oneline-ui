@@ -1,0 +1,34 @@
+.oneline-popover {
+  &__title, &__body {
+     
+  }
+  &__title {
+    padding: 5px 8px;
+    font-size: map-get($size-text,"caption");
+    border-bottom: map-get($map: $color-grey, $key: "dark" ) 1px solid;
+  }
+
+  &__body {
+    padding: 8px;
+  }
+}
+
+.way-popover {
+  position: absolute;
+  left: 150px;
+  top: 400px;
+  background: map-get($color-bg, main);
+  z-index: 0;
+  min-width: 100px;
+  min-height: 80px;
+  box-shadow: #000 1px 1px 3px 0px;
+  border-radius: 5px;
+  // opacity: 0;
+
+  &__arrow { 
+    position: absolute;  
+    
+  }
+}
+
+ 

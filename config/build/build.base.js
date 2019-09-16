@@ -7,7 +7,7 @@ function resolve(source) {
 
 console.log(...loader)
 module.exports = {
-  entry: resolve("src/app/main.ts"),
+  entry: ['babel-polyfill', resolve("src/app/main.ts")],
   output: { 
     filename: '[name].js',
     chunkFilename: '[name].[chunkhash].chunk.js'
@@ -49,7 +49,8 @@ module.exports = {
     alias: {
       '@': resolve('src'),
       'vue$': 'vue/dist/vue.esm.js',
-      '@core': resolve('src/lib/core')
+      '@core': resolve('src/lib/core'),
+      '@utils': resolve('src/lib/utils')
     },
     extensions: [".js", ".vue", ".json", ".ts", ".tsx"]
   }

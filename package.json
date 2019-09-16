@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/onelineteam/oneline-ui#readme",
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "vue": "^2.6.8",
     "vue-router": "^3.0.2"
   },
