@@ -1,23 +1,15 @@
 <template>
-  <div>
-    <!-- <icon type="piaofang"></icon>
-    <icon type="arrows-alt" pre="fa" family="fa"></icon> -->
-    <one-line-button-group>
-      <one-line-button type="primary" icon="piaofang"  @click="clicka">这是文字按钮</one-line-button>
-      <one-line-button type="primary" icon="piaofang"  @click="clicka">这是文字按钮</one-line-button>
-    </one-line-button-group>
-    
+  <div>hello, world! test21
+
+    <hello :outtitle="title"/>
   </div>
 </template>
 
 <script>
 // import Hello from './hello';
-import {Icon} from '@/packages/icon';
-import {OneLineButton} from '@/packages/button';
-import {OneLineButtonGroup} from '@/packages/button-group';
  
 export default {
-  components: {Icon,OneLineButton,OneLineButtonGroup},
+  components: {Hello: ()=> import('./hello')},
   
   data() {
     return {
@@ -29,12 +21,6 @@ export default {
     setTimeout(()=>{
       this.title = "this is test"
     },5000)
-  },
-  methods:{
-    clicka() {
-      console.log(11111);
-      
-    }
   }
 }
 </script>
