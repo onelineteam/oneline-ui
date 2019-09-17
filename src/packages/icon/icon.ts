@@ -2,8 +2,8 @@ import { OnelineComponent, CreateElement, Component, Prop } from "@core";
 
 
 @Component
-export class Icon extends OnelineComponent {
-
+export class OneLineIcon extends OnelineComponent {
+  name: string = "icon";
   @Prop({default: 'iconfont'}) family?: string;
   @Prop({default: 'icon'}) pre?: string;
   

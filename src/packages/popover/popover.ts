@@ -19,7 +19,7 @@ function findChild(node: Node, target: Node, istrue: boolean = false): boolean {
 }
 @Component
 export default class Popover extends OnelineComponent {
-
+  name: string = "popover";
   @Prop() title?: string;
   @Prop() content?: string;
   @Prop({ default: 'click' }) trigger?: "click" | "hover" | "focus" | "hands";
