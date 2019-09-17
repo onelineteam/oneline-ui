@@ -2,6 +2,12 @@
 
   <div>hello, world! test21
 
+
+    <one-line-button-group>
+      <one-line-button type="primary" icon="piaofang"  @click="clicka">这是文字按钮</one-line-button>
+      <one-line-button type="primary" icon="piaofang"  @click="clicka">这是文字按钮</one-line-button>
+    </one-line-button-group>
+
     <hello :outtitle="title"/>
 
   <div style="height: 3000px; position: relative; border: #999 30px solid;">
@@ -22,9 +28,11 @@
 // import Hello from './hello';
  import {Icon} from '@/packages/icon';
 import Popover from './popover.vue';
+import {OneLineButton} from '@/packages/button';
+import {OneLineButtonGroup} from '@/packages/button-group';
  
 export default {
-  components: {Hello: ()=> import('./hello'),Icon, Popover},
+  components: {Hello: ()=> import('./hello'),Icon, Popover, OneLineButton, OneLineButtonGroup},
  
   
   data() {
