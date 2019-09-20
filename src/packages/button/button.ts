@@ -1,13 +1,13 @@
 
 import { OnelineComponent, CreateElement, Component, Prop } from "@core";
-import { Icon } from '@/packages/icon';
+import { OneLineIcon as Icon } from '../icon';
 @Component({
   components: {
     Icon
   }
 })
 export class OneLineButton extends OnelineComponent {
-  name: string = "button";
+  static cname: string = "ol-button";
   @Prop({ default: 'default' }) type?: string;  //类型
   @Prop({ default: false, type: Boolean }) plain!: boolean; //是否朴素按钮
   @Prop({ default: false, type: Boolean }) round!: boolean; //是否圆角按钮

@@ -1,14 +1,16 @@
 import {Vue, CreateElement} from '@core';
 import VueRouter from 'vue-router';
 import App from './App.vue';
-import install, {OneLineButton, OneLineButtonGroup, OneLinePopover, OneLineIcon} from '../packages';
-
+import routes from './routes';
+import install, {OneLineButton, OneLineButtonGroup, OneLinePopover, OneLineIcon, OneLineRow, OneLineCol} from '../packages';
 import "../style/index.scss";
+import "./style.scss";
 Vue.use(VueRouter);
-install(Vue, []);
 const router = new VueRouter({
-  routes: []
+  mode: 'hash',
+  routes: [...routes]
 })
+install(Vue, [OneLineButton, OneLineButtonGroup, OneLinePopover, OneLineIcon, OneLineRow, OneLineCol]);
 
 new Vue({
   router: router,

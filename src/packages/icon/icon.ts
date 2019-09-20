@@ -3,7 +3,7 @@ import { OnelineComponent, CreateElement, Component, Prop } from "@core";
 
 @Component
 export class OneLineIcon extends OnelineComponent {
-  name: string = "icon";
+  static cname: string = "ol-icon";
   @Prop({default: 'iconfont'}) family?: string;
   @Prop({default: 'icon'}) pre?: string;
   

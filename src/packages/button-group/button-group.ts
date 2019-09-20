@@ -2,7 +2,7 @@ import { OnelineComponent, CreateElement, Component, Prop } from "@core";
 
 @Component
 export class OneLineButtonGroup extends OnelineComponent {
-    name: string = "button-group";
+    static cname: string = "ol-button-group";
     render(create: CreateElement) {
 
         return create('div', {

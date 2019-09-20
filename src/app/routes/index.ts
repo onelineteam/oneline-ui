@@ -1,14 +1,22 @@
+import Icon from '../icon.vue';
+import Button from '../button.vue';
+import Input from '../input.vue';
+import Popover from '../popover.vue';
+import Layout from '../layout.vue';
 export default  [
   {
-    path: '/icon', component: () => import('../icon.vue')
+    path: '/icon', component:  Icon, name: 'icon'
   }, 
   {
-    path: '/button', component: () => import('../button.vue')
+    path: '/button', component:  Button, name: 'button'
   },
   {
-    path: '/input', component: () => import('../input.vue')
+    name: 'input', path: '/input', component:  Input
   },
   {
-    path: '/popover', component: () => import('../popover.vue')
+    path: '/popover', component:   Popover, name: 'popover'
   },
+  {
+    path: '/layout', component: Layout, name: 'layout'
+  }
 ]
