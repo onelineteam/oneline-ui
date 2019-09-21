@@ -2,7 +2,9 @@
   <div class="pager">
     <div class="pager-head">
       <ol-row :span="false" :block="true">
-        <ol-col :width="200" cent="center"><h3>One Line</h3></ol-col>
+        <ol-col :width="200" cent="center">
+          <h3>One Line</h3>
+        </ol-col>
         <ol-col></ol-col>
       </ol-row>
     </div>
@@ -18,18 +20,13 @@
         <li>
           <router-link to="/color">颜色（Color）</router-link>
         </li>
-
-        
         <li>
           <router-link :to="{name: 'icon'}">图标（icon）</router-link>
         </li>
-
-        
       </ul>
-
       <h4>表单</h4>
       <ul>
-                <li>
+        <li>
           <router-link to="/button">button</router-link>
         </li>
         <li>
@@ -53,16 +50,16 @@
   export default {
     data() {
       return {
-        title: 'hello'
-      }
+        title: "hello"
+      };
     },
     mounted() {
       // console.log(Hello)
       setTimeout(() => {
-        this.title = "this is test"
-      }, 5000)
+        this.title = "this is test";
+      }, 5000);
     }
-  }
+  };
 </script>
 
 <style>
