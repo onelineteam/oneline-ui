@@ -88,11 +88,12 @@ export class OneLineCol extends OnelineComponent {
   @Prop({ default: 0}) width?: number|string;
   @Prop({default: 'flex'}) type?: "flex";
   @Prop({default: 'center'}) cent?: 'vertical'|'horizontal'|'center';
+  @Prop({ default: 'left'}) align?: 'center'|'left'|'right';
 
   render(createElement: CreateElement) {
     const parent = this.$parent as any;
 
-    const style:any = {};
+    const style:any = {textAlign: this.align};
     if(!parent.span && this.width) {
       style.width = typeof this.width === "number" ? this.width + "px" : this.width;
       style.flex = "0 0 auto";

@@ -64,3 +64,46 @@ $color: (
   yellow: $color-yellow,
   blue: $color-blue
 );
+/*
+     primary: #4d79f6 -> #fff
+     secondary: #4ac7ec -> #fff
+     success: #1ecab8 -> #fff
+     warning: #f3c74d -> #fff
+     info: #9ba7ca -> #fff
+     danger: #f1646c -> #fff
+     dark: #2f4686 -> #fff
+     light: #f1f5fa -> #50649c
+     link: #fff -> #8997bd
+      pink: rgba(255,93,160,.1) -> #ff5da0
+      purple: #7551e9 -> #fff
+*/
+//背景颜色
+$color-main-bg: #eaf0f7;
+
+//文字颜色
+$color-text-main: #50649c; 
+$color-text-secondary: #7081b9;
+$color-text-normal: #a4abc5;
+
+//基本色块
+$color-primary: #4d79f6;
+$color-secondary: #4ac7ec;
+$color-success: #1ecab8;
+$color-warning: #f3c74d;
+$color-info: #9ba7ca;
+$color-danger: #f1646c;
+$color-dark: #2f4686;
+$color-light: #f1f5fa;
+$color-link: #8997bd;
+$color-pink: #ff5da0;
+$color-purple: #7551e9;
+$color-white: #fff;
+$color-muted: #a4abc5;
+
+
+/// 边框
+$color-border-main: #dee2e6;
+$color-border-secondary: #eaf0f7;
+
+//
+$color-shadow-light: 0 0 3px rgba(31,30,47,.05);

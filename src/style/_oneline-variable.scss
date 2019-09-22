@@ -16,3 +16,7 @@ $size-text: (
   caption: 12pt
 );
 
+@mixin text-lead {
+  font-size: 18px;
+  font-weight: 300;
+}
