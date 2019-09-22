@@ -5,7 +5,9 @@
         <ol-col :width="200" cent="center">
           <h3>One Line</h3>
         </ol-col>
-        <ol-col></ol-col>
+        <ol-col align="right">
+          <ol-icon type="github"></ol-icon>
+        </ol-col>
       </ol-row>
     </div>
     <div class="pager-side">
@@ -22,6 +24,9 @@
         </li>
         <li>
           <router-link :to="{name: 'icon'}">图标（icon）</router-link>
+        </li>
+        <li>
+          <router-link to="/animation">动画（animation）</router-link>
         </li>
       </ul>
       <h4>表单</h4>

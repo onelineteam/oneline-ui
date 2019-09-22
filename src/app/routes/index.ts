@@ -5,7 +5,7 @@ import Popover from '../popover.vue';
 import Layout from '../layout.vue';
 import Text from '../text.vue';
 import Color from '../color.vue';
-
+import Animation from '../animation.vue';
 export default  [
   {
     path: '/icon', component:  Icon, name: 'icon'
@@ -28,5 +28,8 @@ export default  [
   },
   {
     path: '/color', component: Color, name: 'color'
+  },
+  {
+    path: '/animation', component: Animation, name: 'animation'
   }
 ]
