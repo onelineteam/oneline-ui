@@ -38,13 +38,22 @@ table {
       margin: 0;
       padding: 0;
     }
+    li {
+      
+    }
     li a {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      line-height: 22px;
       padding: 8px 20px;
       border-bottom: 1px solid #eee;
       text-decoration: none;
-      color: #a4abc5;
+      color: #7c92a7;
       font-size: 14px;
+      .iconfont {
+        color: #7c92a7;
+      }
     }
 
     li a:hover, .router-link-active {
@@ -55,7 +64,13 @@ table {
 
   .pager-body {
     padding: 20px;
-    flex: 1 1 auto;
+    // flex: 1 1 auto;
+    flex: 1 1 0;
+    p {
+      // word-wrap: break-all;
+      word-break: break-all;
+      word-wrap: break-word;
+    }
   }
 
   .pager-foot {

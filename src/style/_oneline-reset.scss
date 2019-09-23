@@ -52,6 +52,7 @@ h6 {
 p {
     margin-top: 0;
     margin-bottom: 1rem;
+    word-wrap: break-word;
 }
 abbr[title],
 abbr[data-original-title] {
@@ -447,4 +448,38 @@ pre code {
 .pre-scrollable {
     max-height: 340px;
     overflow-y: scroll;
+}
+
+//
+.title {
+
+}
+
+.small, small {
+    display: inline-block;
+    font-style: normal;
+    font-size: $size-text-small;
+}
+
+//margin
+.mg-big {
+    margin: 50px;
+}
+.mg-big-lt {
+    margin-left: 50px;
+}
+.mg-big-rt {
+    margin-right: 50px;
+}
+.mg-big-tp {
+    margin-top: 50px;
+}
+.mg-big-bt {
+    margin-bottom: 50px;
+}
+.mg-md-lt {
+  margin-left: 20px;
+}
+.mg-md-rt {
+  margin-right: 20px;
 }

@@ -5,8 +5,15 @@
         <ol-col :width="200" cent="center">
           <h3>One Line</h3>
         </ol-col>
-        <ol-col align="right">
-          <ol-icon type="github"></ol-icon>
+        <ol-col align="right" cent="vertical">
+          <ol-row :block="false" :span="true" :gutter="20" width="auto" gutter-point="right">
+            <ol-col><ol-icon type="liebiao" size="22px"></ol-icon></ol-col>
+            <ol-col><ol-icon type="time" size="22px"/></ol-col>
+             
+            <ol-col align="right" cent="vertical">
+              <a href="#"><ol-icon type="alipay" size="22px"></ol-icon></a>
+            </ol-col>
+          </ol-row>
         </ol-col>
       </ol-row>
     </div>
@@ -14,7 +21,7 @@
       <h4>基本</h4>
       <ul>
         <li>
-          <router-link to="/layout">布局（Layout）</router-link>
+         <router-link to="/layout"><ol-icon type="time" size="22px" color="#7c92a7"/> 布局（Layout）</router-link>
         </li>
         <li>
           <router-link to="/text">文字（Text）</router-link>

@@ -16,6 +16,10 @@ $size-text: (
   caption: 12pt
 );
 
+$size-text-lead: 18px;
+$size-text-title: 15px;
+$size-text-small: 11px;
+
 @mixin text-lead {
   font-size: 18px;
   font-weight: 300;
