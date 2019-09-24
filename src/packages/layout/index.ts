@@ -62,7 +62,7 @@ export class OneLineRow extends OnelineComponent {
   @Prop({ default: 0 }) gutter?: number;
   @Prop({ default: 'zero'}) gutterPoint?: 'all'|'left'|'right'|'zero'
   @Prop({ default: true }) span?: boolean;
-  @Prop({ default: ()=>['md'] }) break?: string[];
+  @Prop({ default: ()=>[] }) break?: string[];
   @Prop({ default: false}) block?:boolean;
   @Prop({ default: 'nowrap'}) wrap?: "nowrap"|"wrap";
   @Prop({ default: '100%'}) width?: number|string;
