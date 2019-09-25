@@ -16,11 +16,24 @@ $size-text: (
   caption: 12pt
 );
 
+$size-text-largest: 30px;
+$size-text-larger: 28px;
+$size-text-large: 26px;
+$size-text-biggest: 24px;
+$size-text-bigger: 22px;
+$size-text-big: 20px;
 $size-text-lead: 18px;
-$size-text-title: 15px;
-$size-text-small: 11px;
+$size-text-title: 16px;
+$size-text-normal: 14px;
+$size-text-small: 12px;
+$size-text-thin: 11px;
 
 @mixin text-lead {
   font-size: 18px;
   font-weight: 300;
+}
+
+@mixin font($size) {
+  font-size: $size;
+  line-height: $size + 8px;
 }

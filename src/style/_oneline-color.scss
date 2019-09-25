@@ -99,6 +99,21 @@ $color-pink: #ff5da0;
 $color-purple: #7551e9;
 $color-white: #fff;
 $color-muted: #a4abc5;
+$map-color: (
+  primary: $color-primary,
+  secondary: $color-secondary,
+  success: $color-success, 
+  warning: $color-warning,
+  info: $color-info, 
+  danger: $color-danger,
+  dark: $color-dark,
+  light: $color-light,
+  link: $color-link,
+  pink: $color-pink,
+  purple: $color-purple,
+  white: $color-white,
+  muted: $color-muted
+);
 
 
 /// 边框

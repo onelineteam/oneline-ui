@@ -11,7 +11,7 @@
             <ol-col><ol-icon type="time" size="22px"/></ol-col>
              
             <ol-col align="right" cent="vertical">
-              <a href="#"><ol-icon type="alipay" size="22px"></ol-icon></a>
+              <a href="https://github.com/onelineteam/oneline-ui" target="_blank" class="link-light"><ol-icon type="github-fill" size="22px"></ol-icon></a>
             </ol-col>
           </ol-row>
         </ol-col>
@@ -21,19 +21,19 @@
       <h4>基本</h4>
       <ul>
         <li>
-         <router-link to="/layout"><ol-icon type="time" size="22px" color="#7c92a7"/> 布局（Layout）</router-link>
+         <router-link to="/layout"><ol-icon type="shu_o" size="22px" color="#7c92a7"/> 布局（Layout）</router-link>
         </li>
         <li>
-          <router-link to="/text">文字（Text）</router-link>
+          <router-link to="/text"><ol-icon type="jianpan_o" size="22px" color="#7c92a7"/> 文字（Text）</router-link>
         </li>
         <li>
-          <router-link to="/color">颜色（Color）</router-link>
+          <router-link to="/color"><ol-icon type="shitujuzhen_o" size="22px" color="#7c92a7"/> 颜色（Color）</router-link>
         </li>
         <li>
-          <router-link :to="{name: 'icon'}">图标（icon）</router-link>
+          <router-link :to="{name: 'icon'}"><ol-icon type="bianji_o" size="22px" color="#7c92a7"/> 图标（icon）</router-link>
         </li>
         <li>
-          <router-link to="/animation">动画（animation）</router-link>
+          <router-link to="/animation"><ol-icon type="jiqiren_o" size="22px" color="#7c92a7"/>  动画（animation）</router-link>
         </li>
       </ul>
       <h4>表单</h4>

@@ -1,55 +1,89 @@
 <template>
   <div>
+    <h3>文字（Text）</h3>
+    <hr />
+    <p class="lead">文字的配置， 我们规定了一些文字的大小及颜色。 </p>
     <table>
       <thead>
         <tr>
           <th>标题</th>
-          <th>例子</th> 
+          <th>例子</th>
+          <th>大小</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td><code>&lt;h1&gt;&lt;/h1&gt;</code></td>
           <td><h1>h1. 标题</h1></td>
+          <td>30px</td>
         </tr>
         <tr>
           <td><code>&lt;h2&gt;&lt;/h2&gt;</code></td>
           <td><h2>h2. 标题</h2></td>
+          <td>24px</td>
         </tr>
         <tr>
           <td><code>&lt;h3&gt;&lt;/h3&gt;</code></td>
           <td><h3>h3. 标题</h3></td>
+          <td>21px</td>
         </tr>
         <tr>
           <td><code>&lt;h4&gt;&lt;/h4&gt;</code></td>
           <td><h4>h4. 标题</h4></td>
+          <td>18px</td>
         </tr>
         <tr>
           <td><code>&lt;h5&gt;&lt;/h5&gt;</code></td>
           <td><h5>h5. 标题</h5></td>
+          <td>15px</td>
         </tr>
         <tr>
           <td><code>&lt;h6&gt;&lt;/h6&gt;</code></td>
           <td><h6>h6. 标题</h6></td>
+          <td>12px</td>
         </tr>
         <tr>
           <td><code>&lt;p&gt;&lt;/p&gt;</code></td>
           <td><p>段落： 这里是段落内容</p></td>
+          <td>12px</td>
         </tr>
       </tbody>
     </table>
+     <hr>
+    <h4>文字大小</h4>
+    <p class="text-largest">text-largest</p>
+    <p class="text-larger">text-larger</p>
+    <p class="text-large">text-large</p>
+    <p class="text-biggest">text-biggest</p>
+    <p class="text-bigger">text-bigger</p>
+    <p class="text-big">text-big</p>
+    <p class="text-lead">text-lead</p>
+    <p class="text-title">text-title</p>
+    <p class="text-normal">text-normal</p>
+    <p class="text-small">text-small</p>
+    <p class="text-thin">text-thin</p>
+    <hr>
+    <h4>文字颜色</h4>
+    <p class="text-color-main">主色</p>
+    <p class="text-color-secondary">次色</p>
+    <p class="text-color-normal">正常色</p>
+    <p class="text-color-"><a href="">链接色</a></p>
 
-    <div>
-      <p>
-        Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。<br>另一方面，当与现代化的工具链以及各种支持类库结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。<br/> 如果你想在深入学习 Vue 之前对它有更多了解，我们制作了一个视频，带您了解其核心概念和一个示例工程。 如果你已经是有经验的前端开发者，想知道 Vue 与其它库/框架有哪些区别，请查看对比其它框架。
-      </p>
+    <p>
+      <span class="color-primary">primary</span>      
+      <span class="color-secondary">secondary</span> 
+      <span class="color-info">info</span>
+      <span class="color-warning">warning</span>
+      <span class="color-danger">danger</span>
+      <span class="color-success">success</span> 
+      <span class="color-muted">muted</span>
+      <span class="color-pink">pink</span>
+      <span class="color-purple">purple</span>
+      <span class="color-dark">dark</span>
+      <span class="color-light">light</span>
+      <span class="color-white">white</span>
 
-      <p class="text-muted">
-        官方指南假设你已了解关于 HTML、CSS 和 JavaScript 的中级知识。如果你刚开始学习前端开发，将框架作为你的第一步可能不是最好的主意——掌握好基础知识再来吧！之前有其它框架的使用经验会有帮助，但这不是必需的。
-      </p>
-    </div>
-
-
+    </p>
 
   </div>
 </template>
