@@ -30,19 +30,19 @@
           <router-link to="/color"><ol-icon type="shitujuzhen_o" size="22px" color="#7c92a7"/> 颜色（Color）</router-link>
         </li>
         <li>
-          <router-link :to="{name: 'icon'}"><ol-icon type="bianji_o" size="22px" color="#7c92a7"/> 图标（icon）</router-link>
+          <router-link :to="{name: 'icon'}"><ol-icon type="bianji_o" size="22px" color="#7c92a7"/> 图标（Icon）</router-link>
         </li>
         <li>
-          <router-link to="/animation"><ol-icon type="jiqiren_o" size="22px" color="#7c92a7"/>  动画（animation）</router-link>
+          <router-link to="/animation"><ol-icon type="jiqiren_o" size="22px" color="#7c92a7"/>  动画（Animation）</router-link>
         </li>
       </ul>
       <h4>表单</h4>
       <ul>
         <li>
-          <router-link to="/button">button</router-link>
+          <router-link to="/button"><ol-icon type="mian" size="22px" color="#7c92a7"/> 按钮（Button）</router-link>
         </li>
         <li>
-          <router-link to="/input">input</router-link>
+          <router-link to="/input"><ol-icon type="yinhangqia_o" size="22px" color="#7c92a7"/> 输入框（Input）</router-link>
         </li>
       </ul>
       <h4>定位</h4>

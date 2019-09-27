@@ -4,7 +4,7 @@ export * from './button-group';
 export * from './popover';
 export * from './icon';
 export * from './layout';
-// export * from './input';
+export * from './input';
 
 
 export default function installComponent(Vue:any, components:Array<any>) {

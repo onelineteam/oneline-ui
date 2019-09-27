@@ -1,0 +1,36 @@
+.ol-input {
+  border-color: transparent;
+  outline: none;
+  color: #2f5275;
+  &-wrapper {
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: stretch;  
+    border: 1px solid #e8ebf3;
+  }
+  &:focus {
+    // border-color: rgba(77, 121, 246, .5);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  
+
+  &-prefix {
+    display: inline-flex;
+    align-items:  stretch; 
+    background: $color-background-main;
+    padding: 6px 8px;
+    // border-top-left-radius: 5px;
+    // border-bottom-left-radius:  5px;
+  }
+
+  &-suffix {
+    display: inline-flex;
+    align-items: stretch;
+    background: $color-background-main;
+    padding: 6px 8px;
+    // border-top-right-radius: 5px;
+    // border-bottom-right-radius: 5px;
+  }
+}

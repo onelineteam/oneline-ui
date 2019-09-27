@@ -2,587 +2,109 @@
   color: map-get(map-get($color, text), title)
 }
 
-
-/* Color
--------------------------- */
-/// color|1|BrandColor|0
-$--color-primary: #409EFF !default;
-/// color|1|BackgroundColor|4
-$--color-white: #FFFFFF !default;
-/// color|1|BackgroundColor|4
-$--color-black: #000000 !default;
-$--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default; /* 53a8ff */
-$--color-primary-light-2: mix($--color-white, $--color-primary, 20%) !default; /* 66b1ff */
-$--color-primary-light-3: mix($--color-white, $--color-primary, 30%) !default; /* 79bbff */
-$--color-primary-light-4: mix($--color-white, $--color-primary, 40%) !default; /* 8cc5ff */
-$--color-primary-light-5: mix($--color-white, $--color-primary, 50%) !default; /* a0cfff */
-$--color-primary-light-6: mix($--color-white, $--color-primary, 60%) !default; /* b3d8ff */
-$--color-primary-light-7: mix($--color-white, $--color-primary, 70%) !default; /* c6e2ff */
-$--color-primary-light-8: mix($--color-white, $--color-primary, 80%) !default; /* d9ecff */
-$--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default; /* ecf5ff */
-/// color|1|SecondaryColor|1
-$--color-success: #67C23A !default;
-/// color|1|SecondaryColor|1
-$--color-warning: #E6A23C !default;
-/// color|1|SecondaryColor|1
-$--color-danger: #F56C6C !default;
-/// color|1|SecondaryColor|1
-$--color-info: #909399 !default;
-
-$--color-success-light: mix($--color-white, $--color-success, 80%) !default;
-$--color-warning-light: mix($--color-white, $--color-warning, 80%) !default;
-$--color-danger-light: mix($--color-white, $--color-danger, 80%) !default;
-$--color-info-light: mix($--color-white, $--color-info, 80%) !default;
-
-$--color-success-lighter: mix($--color-white, $--color-success, 90%) !default;
-$--color-warning-lighter: mix($--color-white, $--color-warning, 90%) !default;
-$--color-danger-lighter: mix($--color-white, $--color-danger, 90%) !default;
-$--color-info-lighter: mix($--color-white, $--color-info, 90%) !default;
-/// color|1|FontColor|2
-$--color-text-primary: #303133 !default;
-/// color|1|FontColor|2
-$--color-text-regular: #606266 !default;
-/// color|1|FontColor|2
-$--color-text-secondary: #909399 !default;
-/// color|1|FontColor|2
-$--color-text-placeholder: #C0C4CC !default;
-/// color|1|BorderColor|3
-$--border-color-base: #DCDFE6 !default;
-/// color|1|BorderColor|3
-$--border-color-light: #E4E7ED !default;
-/// color|1|BorderColor|3
-$--border-color-lighter: #EBEEF5 !default;
-/// color|1|BorderColor|3
-$--border-color-extra-light: #F2F6FC !default;
-
-/* Border
--------------------------- */
-$--border-width-base: 1px !default;
-$--border-style-base: solid !default;
-$--border-color-hover: $--color-text-placeholder !default;
-$--border-base: $--border-width-base $--border-style-base $--border-color-base !default;
-/// borderRadius|1|Radius|0
-$--border-radius-base: 4px !default;
-/// borderRadius|1|Radius|0
-$--border-radius-small: 2px !default;
-/// borderRadius|1|Radius|0
-$--border-radius-circle: 100% !default;
-
-
-$--font-size-base: 14px !default;
-/// fontSize|1|FontSize|0
-$--font-size-small: 13px !default;
-/// fontSize|1|FontSize|0
-$--font-size-extra-small: 12px !default;
-/// fontWeight|1|FontWeight|1
-$--font-weight-primary: 500 !default;
-/// fontWeight|1|FontWeight|1
-$--font-weight-secondary: 100 !default;
-/// fontLineHeight|1|LineHeight|2
-$--font-line-height-primary: 24px !default;
-/// fontLineHeight|1|LineHeight|2
-$--font-line-height-secondary: 16px !default;
-$--font-color-disabled-base: #bbb !default;
-
-/* Button
--------------------------- */
-/// fontSize||Font|1
-$--button-font-size: $--font-size-base !default;
-/// fontWeight||Font|1
-$--button-font-weight: $--font-weight-primary !default;
-/// borderRadius||Border|2
-$--button-border-radius: $--border-radius-base !default;
-/// padding||Spacing|3
-$--button-padding-vertical: 12px !default;
-/// padding||Spacing|3
-$--button-padding-horizontal: 20px !default;
-
-/// fontSize||Font|1
-$--button-medium-font-size: $--font-size-base !default;
-/// borderRadius||Border|2
-$--button-medium-border-radius: $--border-radius-base !default;
-/// padding||Spacing|3
-$--button-medium-padding-vertical: 10px !default;
-/// padding||Spacing|3
-$--button-medium-padding-horizontal: 20px !default;
-
-/// fontSize||Font|1
-$--button-small-font-size: 12px !default;
-$--button-small-border-radius: #{$--border-radius-base - 1} !default;
-/// padding||Spacing|3
-$--button-small-padding-vertical: 9px !default;
-/// padding||Spacing|3
-$--button-small-padding-horizontal: 15px !default;
-/// fontSize||Font|1
-$--button-mini-font-size: 12px !default;
-$--button-mini-border-radius: #{$--border-radius-base - 1} !default;
-/// padding||Spacing|3
-$--button-mini-padding-vertical: 7px !default;
-/// padding||Spacing|3
-$--button-mini-padding-horizontal: 15px !default;
-
-/// color||Color|0
-$--button-default-font-color: $--color-text-regular !default;
-/// color||Color|0
-$--button-default-background-color: $--color-white !default;
-/// color||Color|0
-$--button-default-border-color: $--border-color-base !default;
-
-/// color||Color|0
-$--button-disabled-font-color: $--color-text-placeholder !default;
-/// color||Color|0
-$--button-disabled-background-color: $--color-white !default;
-/// color||Color|0
-$--button-disabled-border-color: $--border-color-lighter !default;
-
-/// color||Color|0
-$--button-primary-border-color: $--color-primary !default;
-/// color||Color|0
-$--button-primary-font-color: $--color-white !default;
-/// color||Color|0
-$--button-primary-background-color: $--color-primary !default;
-/// color||Color|0
-$--button-success-border-color: $--color-success !default;
-/// color||Color|0
-$--button-success-font-color: $--color-white !default;
-/// color||Color|0
-$--button-success-background-color: $--color-success !default;
-/// color||Color|0
-$--button-warning-border-color: $--color-warning !default;
-/// color||Color|0
-$--button-warning-font-color: $--color-white !default;
-/// color||Color|0
-$--button-warning-background-color: $--color-warning !default;
-/// color||Color|0
-$--button-danger-border-color: $--color-danger !default;
-/// color||Color|0
-$--button-danger-font-color: $--color-white !default;
-/// color||Color|0
-$--button-danger-background-color: $--color-danger !default;
-/// color||Color|0
-$--button-info-border-color: $--color-info !default;
-/// color||Color|0
-$--button-info-font-color: $--color-white !default;
-/// color||Color|0
-$--button-info-background-color: $--color-info !default;
-
-$--button-hover-tint-percent: 20% !default;
-$--button-active-shade-percent: 10% !default;
-
-
-
-
-@mixin utils-clearfix {
-  $selector: &;
-
-  @at-root {
-
-    #{$selector}::before,
-    #{$selector}::after {
-      display: table;
-      content: "";
-    }
-
-    #{$selector}::after {
-      clear: both
-    }
-  }
-}
-
-@mixin m($modifier) {
-  $selector: &;
-  $currentSelector: "";
-
-  @each $unit in $modifier {
-    $currentSelector: #{$currentSelector + & + "--" + $unit + ","};
-  }
-
-  @at-root {
-    #{$currentSelector} {
-      @content;
-    }
-  }
-}
-
-// 样式基本控制
-@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $border-radius) {
-  padding: $padding-vertical $padding-horizontal;
-  font-size: $font-size;
-  border-radius: $border-radius;
-
-  &.is-round {
-    padding: $padding-vertical $padding-horizontal;
-  }
-}
-
-@mixin utils-user-select($value) {
-  -moz-user-select: $value;
-  -webkit-user-select: $value;
-  -ms-user-select: $value;
-}
-
-@mixin when($state) {
-  @at-root {
-    &.#{"is-" + $state} {
-      @content;
-    }
-  }
-}
-
-@mixin button-variant($color, $background-color, $border-color) {
-  color: $color;
-  background-color: $background-color;
-  border-color: $border-color;
-
-  &:hover,
-  &:focus {
-    background: mix($--color-white, $background-color, 20%);
-    border-color: mix($--color-white, $border-color, 20%);
-    color: $color;
-  }
-
-  &:active {
-    background: mix($--color-black, $background-color, $--button-active-shade-percent);
-    border-color: mix($--color-black, $border-color, $--button-active-shade-percent);
-    color: $color;
-    outline: none;
-  }
-
-  &.is-active {
-    background: mix($--color-black, $background-color, $--button-active-shade-percent);
-    border-color: mix($--color-black, $border-color, $--button-active-shade-percent);
-    color: $color;
-  }
-
-  &.is-disabled {
-
-    &,
-    &:hover,
-    &:focus,
-    &:active {
-      color: $--color-white;
-      background-color: mix($background-color, $--color-white);
-      border-color: mix($border-color, $--color-white);
-    }
-  }
-
-  &.is-plain {
-    @include button-plain($background-color);
-  }
-}
-
-@mixin button-plain($color) {
-  color: $color;
-  background: mix($--color-white, $color, 90%);
-  border-color: mix($--color-white, $color, 60%);
-
-  &:hover,
-  &:focus {
-    background: $color;
-    border-color: $color;
-    color: $--color-white;
-  }
-
-  &:active {
-    background: mix($--color-black, $color, $--button-active-shade-percent);
-    border-color: mix($--color-black, $color, $--button-active-shade-percent);
-    color: $--color-white;
-    outline: none;
-  }
-
-  &.is-disabled {
-
-    &,
-    &:hover,
-    &:focus,
-    &:active {
-      color: mix($--color-white, $color, 40%);
-      background-color: mix($--color-white, $color, 90%);
-      border-color: mix($--color-white, $color, 80%);
-    }
-  }
-}
-
-#{$prefix}button {
-  display: inline-block;
-  line-height: 1;
-  white-space: nowrap;
-  cursor: pointer;
-  background: $--button-default-background-color;
-  border: $--border-base;
-  border-color: $--button-default-border-color;
-  color: $--button-default-font-color;
-  -webkit-appearance: none;
+.ol-btn {
+  position:relative;
+  display: inline-flex;
+  font-weight: 400;
   text-align: center;
-  box-sizing: border-box;
-  outline: none;
-  margin: 0;
-  transition: .1s;
-  font-weight: $--button-font-weight;
-  @include utils-user-select(none);
-
-  &+& {
-    margin-left: 10px;
-  }
-
-  @include button-size($--button-padding-vertical, $--button-padding-horizontal, $--button-font-size, $--button-border-radius);
-
-  &:hover,
+  vertical-align: middle;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  
+  // border-radius: 3px; 
+  font-size: 14px;
+  line-height: 20px;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   &:focus {
-    color: $--color-primary;
-    border-color: $--color-primary-light-7;
-    background-color: $--color-primary-light-9;
-  }
-
-  &:active {
-    color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
-    border-color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
     outline: none;
   }
-
-  &::-moz-focus-inner {
-    border: 0;
-  }
-
-  & [class*="icon-"] {
-    &+span {
-      margin-left: 5px;
-    }
-  }
-
-  @include when(plain) {
-
-    &:hover,
-    &:focus {
-      background: $--color-white;
-      border-color: $--color-primary;
-      color: $--color-primary;
-    }
-
-    &:active {
-      background: $--color-white;
-      border-color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
-      color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
-      outline: none;
-    }
-  }
-
-  @include when(active) {
-    color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
-    border-color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
-  }
-
-  @include when(disabled) {
-
-    &,
-    &:hover,
-    &:focus {
-      color: $--button-disabled-font-color;
-      cursor: not-allowed;
-      background-image: none;
-      background-color: $--button-disabled-background-color;
-      border-color: $--button-disabled-border-color;
-    }
-
-    &.oneline-button--text {
-      background-color: transparent;
-    }
-
-    &.is-plain {
-
-      &,
-      &:hover,
-      &:focus {
-        background-color: $--color-white;
-        border-color: $--button-disabled-border-color;
-        color: $--button-disabled-font-color;
-      }
-    }
-  }
-
-  @include when(loading) {
-    position: relative;
+  &-disabled {
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    top: -1px;
+    bottom: -1px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 99;
+    cursor: not-allowed;
     pointer-events: none;
+  }
+}
 
-    &:before {
-      pointer-events: none;
-      content: '';
-      position: absolute;
-      left: -1px;
-      top: -1px;
-      right: -1px;
-      bottom: -1px;
-      border-radius: inherit;
-      background-color: rgba(255, 255, 255, .35);
+@each $key, $val in $map-color {
+  .ol-btn-#{$key} {
+    @if $key == light or $key == white {
+      color: $color-text-main;
+    } @else {
+      color: $color-white;
+
+    }
+      background-color: $val;
+      border-color: $val;
+
+      &:hover {
+        background-color: #{$val}aa;
+      }
+      
+  }
+
+  .ol-btn-#{$key}--hollow {
+    @if $key == light or $key == white {
+      background-color: $color-dark;
+    } @else {  
+      background-color: $color-white;
+    }
+    color: $val;
+    border-color: $val;
+    .iconfont {
+      color: $val!important;
+    }
+
+    &:hover {
+      background-color: $val;
+      color: $color-white;
+      .iconfont {
+        color: $color-white!important;
+      }
     }
   }
 
-  @include when(round) {
-    border-radius: 20px;
-    padding: 12px 23px;
+  .ol-btn-#{$key}--shadow{
+    box-shadow: 0 2px 6px 0 #{$val}50;
   }
 
-  @include when(circle) {
-    border-radius: 50%;
-    padding: $--button-padding-vertical;
-  }
-
-  @include m(primary) {
-    @include button-variant($--button-primary-font-color, $--button-primary-background-color, $--button-primary-border-color);
-  }
-
-  @include m(success) {
-    @include button-variant($--button-success-font-color, $--button-success-background-color, $--button-success-border-color);
-  }
-
-  @include m(warning) {
-    @include button-variant($--button-warning-font-color, $--button-warning-background-color, $--button-warning-border-color);
-  }
-
-  @include m(danger) {
-    @include button-variant($--button-danger-font-color, $--button-danger-background-color, $--button-danger-border-color);
-  }
-
-  @include m(info) {
-    @include button-variant($--button-info-font-color, $--button-info-background-color, $--button-info-border-color);
-  }
-
-  @include m(medium) {
-    @include button-size($--button-medium-padding-vertical, $--button-medium-padding-horizontal, $--button-medium-font-size, $--button-medium-border-radius);
-
-    @include when(circle) {
-      padding: $--button-medium-padding-vertical;
-    }
-  }
-
-  @include m(small) {
-    @include button-size($--button-small-padding-vertical, $--button-small-padding-horizontal, $--button-small-font-size, $--button-small-border-radius);
-
-    @include when(circle) {
-      padding: $--button-small-padding-vertical;
-    }
-  }
-
-  @include m(mini) {
-    @include button-size($--button-mini-padding-vertical, $--button-mini-padding-horizontal, $--button-mini-font-size, $--button-mini-border-radius);
-
-    @include when(circle) {
-      padding: $--button-mini-padding-vertical;
-    }
-  }
-
-  @include m(text) {
-    border-color: transparent;
-    color: $--color-primary;
+  .ol-btn--text {
     background: transparent;
-    padding-left: 0;
-    padding-right: 0;
-
-    &:hover,
-    &:focus {
-      color: mix($--color-white, $--color-primary, $--button-hover-tint-percent);
-      border-color: transparent;
-      background-color: transparent;
+    border: none;
+    &:hover {
+      background: transparent!important;
+      color: $color-text-secondary;
+      // opacity: 0.5;
     }
+  }
 
-    &:active {
-      color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
-      border-color: transparent;
-      background-color: transparent;
+
+  .ol-btn--small {
+    padding: 2px 10px;
+    font-size: 12px;
+    .iconfont {
+      font-size: 14px !important;
     }
+  }
+  .ol-btn--big {
+    padding: 12px 24px;
+    font-size: 18px;
+    .iconfont {
+      font-size: 22px !important;
+    }
+  }
 
-    &.is-disabled,
-    &.is-disabled:hover,
-    &.is-disabled:focus {
-      border-color: transparent;
+  .ol-btn--medium {
+    padding: 4px 8px;
+    font-size: 12px;
+    .iconfont {
+      font-size: 16px !important;
     }
   }
 }
-
-  #{$prefix}button-group{
-  @include utils-clearfix;
-  display: inline-block;
-  vertical-align: middle;
-
-  &>.oneline-button {
-    float: left;
-    position: relative;
-
-    &+.oneline-button {
-      margin-left: 0;
-    }
-
-    &.is-disabled {
-      z-index: 1;
-    }
-
-    &:first-child {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-
-    &:last-child {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
-
-    &:first-child:last-child {
-      border-top-right-radius: $--button-border-radius;
-      border-bottom-right-radius: $--button-border-radius;
-      border-top-left-radius: $--button-border-radius;
-      border-bottom-left-radius: $--button-border-radius;
-
-      &.is-round {
-        border-radius: 20px;
-      }
-
-      &.is-circle {
-        border-radius: 50%;
-      }
-    }
-
-    &:not(:first-child):not(:last-child) {
-      border-radius: 0;
-    }
-
-    &:not(:last-child) {
-      margin-right: -1px;
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-      z-index: 1;
-    }
-
-    @include when(active) {
-      z-index: 1;
-    }
-  }
-
-  &>.el-dropdown {
-    &>.oneline-button {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      border-left-color: rgba($--color-white, 0.5);
-    }
-  }
-
-  @each $type in (primary, success, warning, danger, info) {
-    .oneline-button--#{$type} {
-      &:first-child {
-        border-right-color: rgba($--color-white, 0.5);
-      }
-
-      &:last-child {
-        border-left-color: rgba($--color-white, 0.5);
-      }
-
-      &:not(:first-child):not(:last-child) {
-        border-left-color: rgba($--color-white, 0.5);
-        border-right-color: rgba($--color-white, 0.5);
-      }
-    }
-  }
-}
- 
